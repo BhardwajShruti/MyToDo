@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mediumPurple"
+    android:weightSum="9"
+    tools:context="com.example.android.mytodo.DetailActivity">
+
+    <EditText
+        android:id="@+id/EditedTitle"
+        android:layout_width="match_parent"
+android:hint=" Add toDo title here"
+        android:gravity="top"
+
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/darkPurple"
+        android:background="@color/darkPurple"
+        android:textColor="@android:color/white"
+        android:layout_gravity="fill"
+        android:textColorHint="@android:color/white"
+        android:layout_height="0px"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/editedDescription"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="7"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+android:inputType="textMultiLine"
+        android:lines="10"
+        android:backgroundTint="@color/mediumPurple"
+        android:background="@color/mediumPurple"
+        android:gravity="top"
+android:fontFamily="casual"
+        android:hint=" add  description" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:layout_width="0px"
+            android:id="@+id/dateB"
+            android:layout_weight="1"
+            android:onClick="showDatePickerDialog"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:id="@+id/timeB"
+            android:onClick="showTimePickerDialog"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/save"
+        android:background="@color/darkPurple"
+        android:onClick="saveEdit"
+        android:layout_marginBottom="2dp"
+        android:textColor="@android:color/white"
+        android:text="         SAVE          "
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+</LinearLayout>

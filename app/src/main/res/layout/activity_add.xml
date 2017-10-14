@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mediumPurple"
+    android:weightSum="9"
+    tools:context="com.example.android.mytodo.AddActivity">
+
+    <EditText
+        android:id="@+id/EditedTitle"
+        android:layout_width="match_parent"
+        android:hint=" Add toDo title here"
+        android:gravity="top"
+android:textSize="60px"
+        android:fontFamily="monospace"
+        android:backgroundTint="@color/titleColor"
+        android:background="@color/darkPurple"
+        android:textColor="@android:color/white"
+        android:layout_gravity="fill"
+        android:textColorHint="@android:color/white"
+        android:layout_height="0px"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/editedDescription"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="7"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:textSize="50px"
+
+        android:backgroundTint="@color/descColor"
+        android:background="@color/mediumPurple"
+        android:gravity="top"
+        android:fontFamily="casual"
+        android:hint=" add  description" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/date_button"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="showDatePickerDialog"
+            android:text="Today"
+            android:textAlignment="center"
+            android:background="@android:color/darker_gray"/>
+        <Button
+            android:id="@+id/time_button"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="showTimePickerDialog"
+            android:text="MORNING"
+            android:textAlignment="center"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/save"
+        android:background="@color/darkPurple"
+        android:onClick="saveEdit"
+        android:layout_marginBottom="2dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="         SAVE          "
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+</LinearLayout>

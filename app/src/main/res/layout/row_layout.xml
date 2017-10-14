@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:weightSum="1">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:onClick="onCheck"
+        android:layout_width="57dp"
+        android:focusable="false"
+        android:layout_height="117dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+
+            android:layout_height="90px"
+            android:background="@color/titleColor"
+            android:padding="0px"
+        android:textAlignment="center"
+        android:textSize="60px" /><!--android:text="shruti"-->
+
+
+
+        <TextView
+            android:id="@+id/rowTextView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/descColor"
+            android:padding="1px"
+
+            android:textSize="65px" />
+            <!--android:text="hello "-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/rowTextView2"-->
+        <!--android:layout_width="0px"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_height="wrap_content" />-->
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
